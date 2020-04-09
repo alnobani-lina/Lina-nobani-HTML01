@@ -1,7 +1,7 @@
-$brand-main:blue
+$brand-main:blue;
 
-
-.brandinverted{
+.brand-inverted {
     background-color: $brand-neutral;
-    color: brand-main;
+    color: $brand-main;
+
 }

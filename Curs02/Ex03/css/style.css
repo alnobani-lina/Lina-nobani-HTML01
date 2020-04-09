@@ -11,11 +11,11 @@ body {
 
 .box-1 {
   margin-top: 10px;
-  padding-left: 6px;
+  padding-left: 8px -2;
 }
 
 .box-2 {
-  margin: 32px 64px 8px 64px;
+  margin: 32px 8px 64px 64px;
   padding: 6px;
 }
 
