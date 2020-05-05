@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Formular reteta</h1>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col">
+        <h2>Reteta</h2>
+      </div>
+    </div>
+    <!-- /.row  -->
+
+    <div class="row">
+      <div class="col-12">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="nume"
+              class="input-group-text"
+            >Nume reteta * </label>
+          </div>
+
+          <input type="text"
+            class="form-control"
+            id="nume"
+            placeholder="Nume reteta *"
+            required
+          >
+        </div>
+        <!-- /nume reteta  -->
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="long-description" class="input-group-text">
+              Desciere Lunga *
+            </label>
+          </div>
+          <textarea class="form-control"
+            id="long-description"
+            rows="10"
+            placeholder="descriere lunga"
+          ></textarea>
+        </div>
+        <!-- /descriere lunga  -->
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <laber for="short-description" class="input-group-text">short</laber>
+            </div>
+
+            <textarea id="short-description"  
+            rows="4" 
+            class="form-control" 
+            placeholder="descriere scurta*" 
+            required></textarea>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="custom-file">
+            <label for="custom-file" class="custom-file-label">
+                imagine*
+            </label>
+            <input type="file"
+            class="custom-file-input"
+            id="custom-file" 
+            required
+             >
+        </div>
+
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="author" class="input-group-text" >author*</label>
+            </div>
+
+            <select id="author"
+            class="form-control"
+            >
+            <option value="">--autor--</option>
+           </select>
+        </div>
+      </div>
+    </div>
+   <div class="row">
+       <div class="col">
+           <h2>autor</h2>
+       </div>
+   </div>
+
+   <div class="row">
+       <div class="col">
+           <div class="custom-control custom-switch">
+               <input type="checkbox" 
+               class="custom-control-input"
+               id="author-switch"
+               >
+               <label for="author-switch" 
+               class="custom-control-label">aduga autor</label>
+           </div>
+       </div>
+   </div>
+
+   <div class="row">
+       <div class="col-12">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <label for="author-name" 
+                class="input-group-text">
+                    author-name
+                </label>
+            </div>
+
+            <input type="text"
+            class="form-control"
+            id="authoe-name"
+            placeholder="aauthor-name*"
+            required
+            >
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <label for="author surname" class="input-group-text" pre*></label>
+            </div>
+
+            <input type="text"
+            class="form-group"
+            id="author surname"
+            required
+            placeholder="pre">
+        </div>
+       </div>
+
+       <div class="col-12">
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label for="author-website" 
+                class="input-group-text"
+                >website
+            </label>
+            </div>
+            <input type="text" 
+            class="form-control"
+            id="authoe-website"
+            >
+        </div>
+       </div>
+   </div>
+  </form>
+  <!-- /form  -->
+
+</body>
+</html>
