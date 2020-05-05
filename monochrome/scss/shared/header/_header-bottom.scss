@@ -1,0 +1,30 @@
+.header-bottom {
+  background: #2B2B2B no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  margin-top: 230px;
+
+  .nav-main {
+    display: flex;
+    width: 1356px;
+    margin-left: 180px;
+  }
+
+  .nav-main li {
+    float: left;
+    width: 150px;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+
+  .nav-main a {
+    color: #E8E8E8;
+    font-size: 19px;
+    letter-spacing: 0.28px;
+    font-weight: 100;
+    opacity: 1;
+  }
+}
