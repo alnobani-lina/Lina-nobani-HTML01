@@ -1,27 +1,87 @@
-@mixin shape ($type:'square', $size: 200px) {
+
+
+@mixin shape($type: 'square', $size: 200px) {
+  width: $size;
+  height: $size;
+  border: 1px solid #000;
+
+  @if $type == 'diamond' {
+    transform: rotate(45deg);
+  }
+
+  @if $type == 'circle' {
+  border-radius: $size;
+  }
+}
+
+  .arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @mixin arrow ($type: 'arrow', $size: 200px) {
     width: $size;
     height: $size;
-    border: 1px solid black;
+    padding: 0;
 
-    @if $type=='diamond' {
-    transform:rotate(45deg);
-    }
 
-    @if $type == 'diamond' {
-    border-radius: $size
-}
+  @if $type == 'arrow-up' {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+  }
+  
+  @if $type == 'arrow-right' {
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+    border-right: transparent;
+  }
+
+  @if $type == 'arrow-down' {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    border-bottom: transparent;
+  }
+
+  @if $type == 'arrow-left' {
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;;
+  }
 }
 
 .my-square {
-    @include shape();
+  @include shape();
 }
 
 .my-diamond {
-    @include shape ('diamond', 40px);
+  @include shape('diamond', 40px);
 
-    margin: 45px;
+  margin: 45px;
 }
 
 .my-circle {
-    @include shape('circle',100px )
+  @include shape('circle', 100px);
 }
+
+.arrow-up {
+  @include arrow('arrow-up', 0px);
+}
+
+.arrow-right {
+  @include arrow('arrow-right', 0px);
+}
+
+.arrow-down {
+  @include arrow('arrow-down', 0px);
+}
+
+.arrow-left {
+  @include arrow('arrow-left', 0px);
+}
+
+
+

@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/sass ./scss/app.scss ./css/style.css",
     "minify": "./node_modules/.bin/sass ./scss/app.scss ./css/style.css --style compressed",
-    "watch": "./node_modules/.bin/sass --watch ./scss/app.scss:./css/style.css",
+    "watch": "./node_modules/.bin/sass --watch ./scss/app.scss:./css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.3"
+  }
 }

@@ -1,19 +1,18 @@
-$link-color: red; 
-$link-visited: purple;
+  $link-color: red;
+  $link-visited: purple;
 
-$ol-link-color: magenta;
-$ol-link-active: pink;
-$ol-link-visited: lightcoral;
+  $ol-link-color: magenta;
+  $ol-link-active: pink;
+  $ol-link-visited: lightcoral;
 
 ul {
   a {
     text-decoration: none;
     color: $link-color;
-   
+
     &:hover {
       text-decoration: underline;
     }
-
     &:visited {
       color: $link-visited;
     }
@@ -48,10 +47,11 @@ ol {
 }
 
 .para-short {
-  width: 50%; 
-  margin: 0 auto; 
+  width: 50%;
+  margin: 0 auto;
 
-  .reverse & {
-    width: 100%;
+.reverse & {
+  width: 100%;
   }
 }
+

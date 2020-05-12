@@ -7,56 +7,60 @@
 .squares .square-magenta {
   width: 200px;
   height: 200px;
-  background: turquoise;
   border: 1px solid #000;
+  background: turquoise;
   background-color: magenta;
 }
 .squares .square-peru {
   width: 200px;
   height: 200px;
-  background: turquoise;
   border: 1px solid #000;
+  background: turquoise;
   background-color: peru;
 }
 .squares .square-purple {
   width: 200px;
   height: 200px;
-  background: turquoise;
   border: 1px solid #000;
+  background: turquoise;
   background-color: purple;
 }
 
 .circles {
+  margin: 0 auto;
   width: 75%;
   border: 2px dotted brown;
   border-radius: 20px;
-  padding: 10px;
-  margin: 0 auto;
 }
 .circles .circle-red {
   width: 200px;
   height: 200px;
-  background: #800080;
-  border: 3px solid #FF0000;
-  border-radius: 50%;
+  border: 3px solid red;
+  border-radius: 100px;
+  background-color: purple;
   background-color: red;
-  border-color: blue;
 }
 .circles .circle-green {
   width: 200px;
   height: 200px;
-  background: #800080;
-  border: 3px solid #FF0000;
-  border-radius: 50%;
+  border: 3px solid red;
+  border-radius: 100px;
+  background-color: purple;
   background-color: green;
 }
 .circles .circle-blue {
   width: 200px;
   height: 200px;
-  background: #800080;
-  border: 3px solid #FF0000;
-  border-radius: 50%;
+  border: 3px solid red;
+  border-radius: 100px;
+  background-color: purple;
   background-color: blue;
+}
+.circles .circle-border-blue {
+  border-color: blue;
+  border-width: 10px;
+  border-style: solid;
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

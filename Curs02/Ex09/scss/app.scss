@@ -5,16 +5,28 @@
 }
 
 $colors:(
-  "main":red,
-  "primary":blue,
-  "secondary":green,
-  "tertiary":yellow,
-  "neutral":gray
+  "main": red,
+  "primary": blue,
+  "secondary": green,
+  "tertiary": yellow,
+  "neutral": gray
 );
 
-@each $colorName, $coloralue in $colors {
+@each $colorName, $colorValue in $colors {
   .btn-#{$colorName} {
-    color:$coloralue;
+    color: $colorValue;
+  }
+}
+
+@each $colorName, $colorValue in $colors {
+  .btn-bg-#{$colorName} {
+    background-color: $colorValue;
+  }
+}
+
+@each $colorName, $colorValue in $colors {
+  .text-#{$colorName} {
+    color: $colorValue;
   }
 }
 

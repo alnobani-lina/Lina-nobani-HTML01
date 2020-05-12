@@ -12,7 +12,7 @@
 
 @for $i from 1 through 5 {
   .box-#{$i} {
-    border-width: #{$i}px
+    border-width: #{$i}px;
   }
 }
 
@@ -24,7 +24,7 @@
 }
 
 @for $i from 1 through 5 {
-  @if $i / 2 != 0 {
+  @if $i % 2 != 0 {
     .box-#{$i}0 {
       background-color: gray;
     }
