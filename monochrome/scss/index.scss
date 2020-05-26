@@ -1,26 +1,14 @@
 // the gulp server is serving fonts from /fonts, per the gulpfile, see /dist
-// this can be changed if necessary, no dot required, the server roots starts /
+// this can be changed if necessary
 $fa-font-path: '/fonts';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/regular';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/brands';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
-
-// site fonts
-@import './fonts';
-
 @import './../node_modules/bootstrap/scss/bootstrap-reboot';
 
-@import './reset';
-
+@import './fonts';
 @import './variables';
 @import './common';
 @import './shared/index';
-@import './homepage/index';
-@import './category/index';
 
-
-body {
-  font-family: Roboto, sans-serif;
-  color: $gray-secondary;
-}
